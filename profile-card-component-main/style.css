@@ -2,5 +2,22 @@
     --Dark_cyan: hsl(185, 75%, 39%);
     --Very_dark_desaturated_blue: hsl(229, 23%, 23%);
     --Dark_grayish_blue: hsl(227, 10%, 46%);
+    --Dark_gray: hsl(0, 0%, 59%);
 }
 
+  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.profile, .profile_estadistic{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.profile_age{
+    color: var(--Dark_gray);
+}
