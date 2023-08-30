@@ -6,19 +6,24 @@
     --Light_gray: hsla(0, 2%, 80%, 0.535);
 }
 
-  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
-
-
+  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Quicksand:wght@500&display=swap');
 
 body{
     font-family: 'Kumbh Sans', sans-serif;
     background-color: var(--Dark_cyan);
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-position: -80% 150%, 180% -70%;
+    background-repeat: no-repeat;
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;  
 }
 
 .profile_img{
     border-radius: 50%;
+    border: white 5px solid;
 }
-
 
 .profile, .profile_stadistic{
     font-weight: 700;
@@ -28,16 +33,19 @@ body{
 .profile{
     display: flex;
     align-items: center;
-    padding: 30px 0 10px 0;
+    padding: 15px 0 10px 0;
 }
 
 .profile_name{
     color: var(--Very_dark_desaturated_blue);
+    font-size: 20px;
     padding-right: 10px;
 }
 
 .profile_city{
     color: var(--Dark_gray);
+    font-family: 'Kumbh Sans';
+    font-size: 18px;
     font-weight: 400;
     padding: 10px 0px 35px 0px;
 }
@@ -48,6 +56,7 @@ body{
     padding-top: 30px;
     width: 100%; 
     color: var(--Very_dark_desaturated_blue); 
+    font-size: 18px;
     border-top: 1px solid var(--Light_gray);
     justify-content: space-around;
 }
@@ -56,27 +65,33 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 25px;
 }
 
 .profile_stadistic_name{
     padding-top: 10px;
+    font-size: 12px;;
     color: var(--Dark_gray);
+    letter-spacing: 2px;
     font-weight: 400;
 }
 
 .card_profile{
     background-color: white;
+    background-image: url("./images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
     width: 350px;
     height: 400px;
     border-radius: 10px; /*Para darle un borde redondeado a la calse card_profile*/
     display: flex; /*Sirve para acomodar los elementos en forma horizontal (uno al lado del otro)*/
     flex-direction: column; /*Esto es para que cada elemento ocupe una fila (Me hubica los elementos uno debajo del otro)*/
     align-items: center; /*Con el atributo center me hubica los elementos en el centro de la clase card_profile horizontalmente hablando*/
-    justify-content: center; /*Con el atributo center me hubica los elementos en el centro verticalmente hablando*/
+    justify-content: end; /*Con el atributo center me hubica los elementos ordenados empezando desde abajo para arriba verticalmente hablando*/
 }
-
 
 .profile_age{
     color: var(--Dark_gray);
-    font-weight: 400;
+    font-weight: 200;
+    font-family: 'Kumbh Sans';
+    font-size: 20px;
 }
